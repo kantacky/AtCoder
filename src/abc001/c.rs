@@ -34,7 +34,7 @@ pub fn main() {
     _ => "N",
   });
 
-  let new_dis: u16 = (dis as f32 / 60 as f32 * 10 as f32).round() as u16;
+  let new_dis: u16 = (dis as f32 / 60_f32 * 10_f32).round() as u16;
 
   let w: u16 = match new_dis {
     0..=2 => 0,
@@ -52,7 +52,7 @@ pub fn main() {
     _ => 12,
   };
 
-  if w == 0 as u16 {
+  if w == 0_u16 {
     println!("C 0");
   } else {
     println!("{} {}", dir_s, w);
