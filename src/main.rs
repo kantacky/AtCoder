@@ -7,5 +7,5 @@
 mod abc001;
 
 fn main() {
-  abc001::b::main();
+  abc001::c::main();
 }
